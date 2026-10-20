@@ -2,7 +2,6 @@ const products = require("../../src/data/products");
 const { filterByCategory } = require("../../src/catalog");
 
 describe("filterByCategory", () => {
-  test.todo("'all' возвращает товары с ID [1, 2, 3, 4, 5, 6]");
   test("'all' возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
     const result = filterByCategory(products, "all");
     const resultIds = result.map((product) => product.id);
